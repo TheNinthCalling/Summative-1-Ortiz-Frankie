@@ -28,8 +28,14 @@ public class MagicEightBallController {
     private Random random= new Random();
 
     public MagicEightBallController() {
-        answers.add("yes");
-        answers.add("no");
+        answers.add("Yes");
+        answers.add("No");
+        answers.add("Maybe");
+        answers.add("Only time will tell");
+        answers.add("Ask again");
+        answers.add("It is Unknown");
+
+
     }
 
 
@@ -37,7 +43,7 @@ public class MagicEightBallController {
     @ResponseStatus(value= HttpStatus.CREATED)
     public Answer askQuestion(@RequestBody Answer question){
         question.setId(idCounter++);
-        question.setQuestion(answers.get(random.nextInt(2)));
+        question.setAnswer(answers.get(random.nextInt(answers.size())));
         return question;
     }
 

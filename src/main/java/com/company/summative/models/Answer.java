@@ -5,6 +5,9 @@ public class Answer {
     private String question;
     private String answer;
 
+    public Answer(){
+        this.question="";
+    }
     public int getId() {
         return id;
     }

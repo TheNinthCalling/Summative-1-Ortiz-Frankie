@@ -34,8 +34,6 @@ public class MagicEightBallController {
         answers.add("Only time will tell");
         answers.add("Ask again");
         answers.add("It is Unknown");
-
-
     }
 
 

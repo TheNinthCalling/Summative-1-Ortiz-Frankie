@@ -22,7 +22,7 @@ public class DefinitionControllerTest {
     private ObjectMapper mapper = new ObjectMapper();
 
     @Test
-    public void ShouldReturnWord() throws Exception {
+    public void shouldReturnWord() throws Exception {
 
         mockMvc.perform(get("/word"))
                 .andDo(print())             //Print results

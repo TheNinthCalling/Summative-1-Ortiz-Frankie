@@ -27,14 +27,12 @@ public class MagicEightBallControllerTest {
         Answer toTest = new Answer();
         String inputJson=mapper.writeValueAsString(toTest);
         System.out.println(inputJson);
-
         mockMvc.perform(
                 post("/magic")
                 .content(inputJson)
                 .contentType(MediaType.APPLICATION_JSON))
                 .andDo(print())
                 .andExpect(status().isCreated());
-
     }
 
 }

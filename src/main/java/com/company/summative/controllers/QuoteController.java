@@ -23,6 +23,7 @@ public class QuoteController {
         quotes.add(new Quote("Maya Angelou", "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel."));
         quotes.add(new Quote("Walt Disney", "The way to get started is to quit talking and begin doing."));
         quotes.add(new Quote("Mahatma Gandhi", "Be the change that you wish to see in the world."));
+        quotes.add(new Quote("Albert Einstein", "I have no special talents, I am just passionately curious"));
         quotes.add(new Quote("Martin Luther King Jr.", "Darkness cannot drive out darkness; only light can do that. Hate cannot drive out hate; only love can do that."));
         quotes.add(new Quote("Oscar Wilde", "Be yourself; everyone else is already taken."));
         quotes.add(new Quote("Miles Davis", "Sometimes you have to play a long time to be able to play like yourself"));

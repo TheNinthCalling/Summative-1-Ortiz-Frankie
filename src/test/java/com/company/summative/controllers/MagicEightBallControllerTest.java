@@ -23,7 +23,7 @@ public class MagicEightBallControllerTest {
 
 
     @Test
-    public void shouldReturnNewAnswerWithEmptyQuestion() throws Exception {
+    public void shouldReturnNewAnswerWithStatus201() throws Exception {
         Answer toTest = new Answer();
         String inputJson=mapper.writeValueAsString(toTest);
         System.out.println(inputJson);

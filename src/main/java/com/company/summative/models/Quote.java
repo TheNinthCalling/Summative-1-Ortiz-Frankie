@@ -5,9 +5,10 @@ public class Quote {
     private String author;
     private String quote;
 
-    public Quote(String author, String quote) {
+    public Quote(String author, String quote, int id) {
         this.author = author;
         this.quote = quote;
+        this.id = id;
     }
 
     public int getId() {
